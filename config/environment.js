@@ -4,6 +4,8 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'interest-bucket',
     environment: environment,
+    contentSecurityPolicy: { 'connect-src': "'self' wss://*.firebaseio.com" },
+    firebase: 'https://interest-bucket.firebaseio.com/',
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {

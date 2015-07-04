@@ -1,0 +1,24 @@
+<form {{action "save" on="submit"}}>
+  <p>
+    <label>Title:
+      {{input value=model.title}}
+    </label>
+  </p>
+  <p>
+    <label>Amazon URL:
+      {{input value=model.amazonURL }}
+    </label>
+  </p>
+  <p>
+    <label>Image URL:
+      {{input value=model.imgURL }}
+    </label>
+  </p>
+  <p>
+    <label>Blurb:
+      {{input value=model.blurb}}
+    </label>
+  </p>
+  <input type="submit" value="Save"/>
+  <button {{action "cancel"}}>Cancel</button>
+</form>

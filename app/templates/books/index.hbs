@@ -1,0 +1,7 @@
+<h1>Friends Index</h1>
+
+<ul>
+  {{#each book in model}}
+  <li>{{link-to book.title 'books.show' book}}</li>
+  {{/each}}
+</ul>

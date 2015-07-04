@@ -1,0 +1,12 @@
+<ul>
+  <li>Title: {{model.title}}</li>
+  <li><img src={{model.imgURL}}></li>
+  <li>
+    <a href={{model.amazonURL}}>
+      view on Amazon
+    </a>
+  </li>
+  <li>{{link-to 'Edit this book' 'books.edit' model}}</li>
+  <li>{{link-to 'Return to books list' 'books'}}</li>
+  <li><a href="#" {{action "delete" model}}>Delete</a></li>
+</ul>
