@@ -1,2 +1,15 @@
 <h1>Edit this Book</h1>
 {{partial "books/form"}}
+
+Tags:
+{{#each tag in model.tags}}
+  {{tag.name}}(<a href='#' {{action 'removeTag' tag}}>x</a>)
+{{/each}}
+
+<form {{action 'addTag' on='submit'}}>
+  {{input type='text' value=newTagName}}
+  <button type='submit' value='submit' {{action 'addTag'}}>
+    add tag
+  </button>
+</form>
+

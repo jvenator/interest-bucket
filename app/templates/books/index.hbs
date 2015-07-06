@@ -1,7 +1,7 @@
-<h1>Friends Index</h1>
+<h3>Books Index</h3>
 
-<ul>
+<ol>
   {{#each book in model}}
   <li>{{link-to book.title 'books.show' book}}</li>
   {{/each}}
-</ul>
+</ol>
