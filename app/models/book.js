@@ -11,12 +11,12 @@ export default DS.Model.extend({
   //   // SHOULD deliver an array of object, but IS NOT
   //   var tags = this.get('tags');
 
-  //   var str = [];
+  //   var array = [];
 
   //   for(var i = 0; tags.length; i++) {
   //     // need to add in commas & spacing
-  //     str.push(tags[i].name);
+  //     array.push(tags[i].name);
   //   };
-  //   return str;
+  //   return array;
   // })
 });
