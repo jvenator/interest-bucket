@@ -1,8 +1,8 @@
 <ul>
   <li>Title: {{model.title}}</li>
   <li><img src={{model.imgURL}}></li>
-  <li>Tags: {{#each tag in model.tags}}{{tag.name}} {{/each}}</li>
-  <li>Tag Set: {{model.tagSet}}</li>
+  <li>{{model.blurb}}</li>
+  <li>Tag String: {{model.tagString}}</li>
   <li>
     <a href={{model.amazonURL}}>
       View on Amazon
