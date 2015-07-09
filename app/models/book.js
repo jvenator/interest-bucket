@@ -64,7 +64,7 @@ export default DS.Model.extend({
 //   ...
 // }.property('prop1', 'prop2')
 
-// It's actually this behind the scenes.
+// It's actually this behind the scenes...
 
 // Function.prototype.property = function(listOfFieldsBeingWatched, cbFunc) {
 //   return Ember.computed(listOfFieldsBeingWatched) {

@@ -6,10 +6,14 @@ Tags:
   {{tag.name}}(<a href='#' {{action 'removeTag' tag}}>x</a>)
 {{/each}}
 
-<form {{action 'addTag' on='submit'}}>
+<form {{action 'addNewTag' on='submit'}}>
   {{input type='text' value=newTagName}}
-  <button type='submit' value='submit' {{action 'addTag'}}>
+  <button type='submit' value='submit' {{action 'addNewTag'}}>
     add tag
   </button>
 </form>
+
+{{# each tag in allTags}}
+  <a href='#' {{action 'addExistingTag' tag}}>{{tag.name}} (+)</a>
+{{/each}}
 
