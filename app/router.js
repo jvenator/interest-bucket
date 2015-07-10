@@ -13,7 +13,6 @@ Router.map(function() {
   });
   this.route('tags');
   this.route('login');
-  this.route('protected');
   this.route('logout');
 });
 
