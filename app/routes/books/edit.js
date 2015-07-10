@@ -2,20 +2,17 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
 
-  // model: function() {
-  //   return Ember.RSVP.hash({
-  //       allTags: this.store.findAll('tag')
-  //   });
-  // },
-
   setupController: function(controller, model) {
     this._super(controller,model);
-    var allTags = DS.PromiseArray.create({
-      promise: this.store.find('tag')
+    this.store.find('tag').then(function(tags) {
+      controller.set('allTags', tags);
     });
-    allTags.then(function() {
-      controller.set('allTags', allTags)
-    });
+    // var allTags = DS.PromiseArray.create({
+    //   promise: this.store.find('tag')
+    // });
+    // allTags.then(function() {
+    //   controller.set('allTags', allTags)
+    // });
   },
 
   actions: {

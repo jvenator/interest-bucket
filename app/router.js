@@ -12,6 +12,9 @@ Router.map(function() {
     this.route('edit', { path: ':book_id/edit' });
   });
   this.route('tags');
+  this.route('login');
+  this.route('protected');
+  this.route('logout');
 });
 
 export default Router;
